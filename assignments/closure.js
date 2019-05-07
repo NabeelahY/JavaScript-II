@@ -1,15 +1,15 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
-let num = [23,90,190,567,345,34,85,987,10297,1854,865];
+let num = [23, 90, 190, 567, 345, 34, 85, 987, 10297, 1854, 865];
 
-function divisibleByTwo () {
-  const twos = num.filter((no) => no%2 === 0);
+function divisibleByTwo() {
+  const twos = num.filter((no) => no % 2 === 0);
   console.log(`These number(s) are divisible by 2 (${twos})`);
- 
-  function divisibleByThree () {
-    const threes = twos.filter((no) => no%3 === 0)
+
+  function divisibleByThree() {
+    const threes = twos.filter((no) => no % 3 === 0)
     console.log(`These number(s) are divisible by 2 and 3 (${threes})`);
-    
+
   }
   console.log(divisibleByThree());
 }
