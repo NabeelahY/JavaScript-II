@@ -11,9 +11,9 @@ function divisibleByTwo() {
     console.log(`These number(s) are divisible by 2 and 3 (${threes})`);
 
   }
-  console.log(divisibleByThree());
+  divisibleByThree();
 }
-console.log(divisibleByTwo());
+divisibleByTwo();
 
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
@@ -22,10 +22,22 @@ console.log(divisibleByTwo());
 // ==== Challenge 2: Create a counter function ====
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
+  let num = 0;
+  
+  const increment = () => {
+    num++;
+    return num;
+  }
+
+  return increment;
 };
-// Example usage: const newCounter = counter();
-// newCounter(); // 1
-// newCounter(); // 2
+
+// Example usage: 
+const newCounter = counter();
+console.log(newCounter()); // 1
+console.log(newCounter()); // 2
+
+
 
 // ==== Challenge 3: Create a counter function with an object that can increment and decrement ====
 const counterFactory = () => {
